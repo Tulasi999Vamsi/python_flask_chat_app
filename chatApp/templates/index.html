@@ -161,6 +161,7 @@ function login() {
             loginBox.classList.add("hidden");
             chatBox.classList.remove("hidden");
             loadMessages();
+            messageInterval = setInterval(loadMessages, 2000);
         } else {
             alert("Invalid login");
         }
